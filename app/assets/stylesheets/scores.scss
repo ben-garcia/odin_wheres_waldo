@@ -1,0 +1,53 @@
+// Place all the styles related to the Scores controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$grey-color: #ccc;
+
+/* SCORES PAGE  */
+
+body {
+  background-color: #fff;
+}
+
+.main-menu {
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: $grey-color;
+  margin-left: 700px;
+  padding: 10px;
+  position: relative;
+  bottom: 18px;
+  text-decoration: none;
+  font-family: monospace;
+  font-size: 20px;
+  color: black;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+#scores-container {
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: $grey-color;
+  margin: 0 550px;
+
+  h1 {
+    font-size: 30px;
+    text-align: center;
+    font-family: monospace;
+  }
+
+  table {
+    padding-left: 60px;
+    padding-bottom: 20px;
+
+    th, td {
+      border: 1px solid black;
+      font-size: 20px;
+      padding: 5px 10px;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+<section id="index-title">
+  <h1>Where's Waldo?</h1>
+</section>
+
+<div id="container">
+  <% @puzzles.each do |puzzle| %>
+
+    <div id="puzzle-title">
+      <%= puzzle.title %> <br>
+      <span>Difficulty Level: <%= puzzle.difficulty %></span>
+    </div>
+
+    <div id="picture-buttons">
+
+      <img id="puzzle-image" src="<%= puzzle.url %>" alt="<%= puzzle.difficulty %> Puzzle">
+
+      <div id="buttons">
+        <button id="<%= puzzle.title %>" type="button">Play</button>
+        <button id="<%= puzzle.title %>" type="button">High Scores</button>
+      </div>
+
+    </div>
+  <% end %>
+
+</div>

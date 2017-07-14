@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  number: 9.99
+  player_name: MyString
+  puzzle_id: 1
+
+two:
+  number: 9.99
+  player_name: MyString
+  puzzle_id: 1
