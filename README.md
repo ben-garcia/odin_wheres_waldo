@@ -1,4 +1,7 @@
-<a href="https://www.theodinproject.com/courses/javascript-and-jquery/lessons/where-s-waldo-a-photo-tagging-app">Where's Waldo (A Photo Tagging App)</a>
+<strong>The Odin Project</strong><br /><br />
+<a href="https://www.theodinproject.com/courses/javascript-and-jquery/lessons/where-s-waldo-a-photo-tagging-app">Where's Waldo (A Photo Tagging App)</a><br />
+Project Description<br /><br />
+a< href="https://odinwhereswaldo.herokuapp.com/">Live App</a><br /><br />
 
 This project will finally give you a chance to tie together everything you've learned so far. It's a project with a lot of complexity so take it one step at a time. Working with Rails as a back end is pretty straightforward but you'll be juggling some of the front end functionality too. This is entirely within the realm of the kind of thing you might be asked to build on the job (though of course not exactly). Are you ready???
 
