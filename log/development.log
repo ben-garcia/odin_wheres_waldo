@@ -25285,3 +25285,380 @@ Processing by PuzzlesController#index as HTML
 Completed 200 OK in 33ms (Views: 31.5ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-03-16 09:20:55 -0700
+  
+PG::ConnectionBad (fe_sendauth: no password supplied
+):
+  
+pg (0.21.0) lib/pg.rb:56:in `initialize'
+pg (0.21.0) lib/pg.rb:56:in `new'
+pg (0.21.0) lib/pg.rb:56:in `connect'
+activerecord (5.1.6.2) lib/active_record/connection_adapters/postgresql_adapter.rb:697:in `connect'
+activerecord (5.1.6.2) lib/active_record/connection_adapters/postgresql_adapter.rb:221:in `initialize'
+activerecord (5.1.6.2) lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `new'
+activerecord (5.1.6.2) lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `postgresql_connection'
+activerecord (5.1.6.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in `new_connection'
+activerecord (5.1.6.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in `checkout_new_connection'
+activerecord (5.1.6.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in `try_to_checkout_new_connection'
+activerecord (5.1.6.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in `acquire_connection'
+activerecord (5.1.6.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in `checkout'
+activerecord (5.1.6.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `connection'
+activerecord (5.1.6.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `retrieve_connection'
+activerecord (5.1.6.2) lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+activerecord (5.1.6.2) lib/active_record/connection_handling.rb:88:in `connection'
+activerecord (5.1.6.2) lib/active_record/migration.rb:562:in `connection'
+activerecord (5.1.6.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6.2) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-03-16 09:22:41 -0700
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "wheres_waldo_development" does not exist
+):
+  
+activerecord (5.1.6.2) lib/active_record/connection_adapters/postgresql_adapter.rb:701:in `rescue in connect'
+activerecord (5.1.6.2) lib/active_record/connection_adapters/postgresql_adapter.rb:697:in `connect'
+activerecord (5.1.6.2) lib/active_record/connection_adapters/postgresql_adapter.rb:221:in `initialize'
+activerecord (5.1.6.2) lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `new'
+activerecord (5.1.6.2) lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `postgresql_connection'
+activerecord (5.1.6.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in `new_connection'
+activerecord (5.1.6.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in `checkout_new_connection'
+activerecord (5.1.6.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in `try_to_checkout_new_connection'
+activerecord (5.1.6.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in `acquire_connection'
+activerecord (5.1.6.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in `checkout'
+activerecord (5.1.6.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `connection'
+activerecord (5.1.6.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `retrieve_connection'
+activerecord (5.1.6.2) lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+activerecord (5.1.6.2) lib/active_record/connection_handling.rb:88:in `connection'
+activerecord (5.1.6.2) lib/active_record/migration.rb:562:in `connection'
+activerecord (5.1.6.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6.2) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  [1m[35m (201.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (118.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6879576049087553805)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePuzzles (20170710152919)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (141.1ms)[0m  [1m[35mCREATE TABLE "puzzles" ("id" bigserial primary key, "url" character varying, "title" character varying, "difficulty" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170710152919"]]
+  [1m[35m (13.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateScores (20170710153127)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (94.6ms)[0m  [1m[35mCREATE TABLE "scores" ("id" bigserial primary key, "number" integer, "player_name" character varying, "puzzle_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170710153127"]]
+  [1m[35m (14.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateCharacters (20170710153236)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (117.4ms)[0m  [1m[35mCREATE TABLE "characters" ("id" bigserial primary key, "name" character varying, "x_position" integer, "y_position" integer, "puzzle_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170710153236"]]
+  [1m[35m (13.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-03-16 16:25:11.474798"], ["updated_at", "2019-03-16 16:25:11.474798"]]
+  [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6879576049087553805)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2019-03-16 09:25:31 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PuzzlesController#index as HTML
+  Rendering puzzles/index.html.erb within layouts/application
+  [1m[36mPuzzle Load (0.4ms)[0m  [1m[34mSELECT "puzzles".* FROM "puzzles"[0m
+  Rendered puzzles/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 1467ms (Views: 1422.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-16 09:25:42 -0700
+Processing by PuzzlesController#index as HTML
+  Rendering puzzles/index.html.erb within layouts/application
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT "puzzles".* FROM "puzzles"[0m
+  Rendered puzzles/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 33ms (Views: 31.9ms | ActiveRecord: 0.2ms)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "puzzles"[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "characters"[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "scores"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "puzzles" ("url", "title", "difficulty", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["url", "https://s-media-cache-ak0.pinimg.com/originals/86/b9/b1/86b9b1e83140b935031a7c7b0ebf0170.jpg"], ["title", "The Town"], ["difficulty", "Easy"], ["created_at", "2019-03-16 16:26:06.144219"], ["updated_at", "2019-03-16 16:26:06.144219"]]
+  [1m[35m (25.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "puzzles" ("url", "title", "difficulty", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["url", "https://metrouk2.files.wordpress.com/2015/02/x8jz7pq.jpg"], ["title", "FVN and Games in Ancient Rome"], ["difficulty", "Medium"], ["created_at", "2019-03-16 16:26:06.171419"], ["updated_at", "2019-03-16 16:26:06.171419"]]
+  [1m[35m (9.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "puzzles" ("url", "title", "difficulty", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["url", "http://cdn.collider.com/wp-content/uploads/wheres-waldo-book-page-challenge.jpg"], ["title", "The Gobbling Gluttons"], ["difficulty", "Hard"], ["created_at", "2019-03-16 16:26:06.182440"], ["updated_at", "2019-03-16 16:26:06.182440"]]
+  [1m[35m (9.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT  "puzzles".* FROM "puzzles" ORDER BY "puzzles"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "characters" ("name", "x_position", "y_position", "puzzle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Waldo"], ["x_position", 863], ["y_position", 700], ["puzzle_id", 1], ["created_at", "2019-03-16 16:26:06.229145"], ["updated_at", "2019-03-16 16:26:06.229145"]]
+  [1m[35m (29.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT  "puzzles".* FROM "puzzles" ORDER BY "puzzles"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "characters" ("name", "x_position", "y_position", "puzzle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Wilma"], ["x_position", 874], ["y_position", 571], ["puzzle_id", 1], ["created_at", "2019-03-16 16:26:06.261413"], ["updated_at", "2019-03-16 16:26:06.261413"]]
+  [1m[35m (63.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPuzzle Load (0.3ms)[0m  [1m[34mSELECT  "puzzles".* FROM "puzzles" ORDER BY "puzzles"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "characters" ("name", "x_position", "y_position", "puzzle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Wizard"], ["x_position", 1287], ["y_position", 728], ["puzzle_id", 1], ["created_at", "2019-03-16 16:26:06.328046"], ["updated_at", "2019-03-16 16:26:06.328046"]]
+  [1m[35m (8.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT  "puzzles".* FROM "puzzles" WHERE "puzzles"."difficulty" = $1 LIMIT $2[0m  [["difficulty", "Medium"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "characters" ("name", "x_position", "y_position", "puzzle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Waldo"], ["x_position", 552], ["y_position", 227], ["puzzle_id", 2], ["created_at", "2019-03-16 16:26:06.350789"], ["updated_at", "2019-03-16 16:26:06.350789"]]
+  [1m[35m (7.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT  "puzzles".* FROM "puzzles" WHERE "puzzles"."difficulty" = $1 LIMIT $2[0m  [["difficulty", "Medium"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "characters" ("name", "x_position", "y_position", "puzzle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Wilma"], ["x_position", 952], ["y_position", 596], ["puzzle_id", 2], ["created_at", "2019-03-16 16:26:06.360673"], ["updated_at", "2019-03-16 16:26:06.360673"]]
+  [1m[35m (8.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT  "puzzles".* FROM "puzzles" WHERE "puzzles"."difficulty" = $1 LIMIT $2[0m  [["difficulty", "Medium"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "characters" ("name", "x_position", "y_position", "puzzle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Wizard"], ["x_position", 604], ["y_position", 134], ["puzzle_id", 2], ["created_at", "2019-03-16 16:26:06.372096"], ["updated_at", "2019-03-16 16:26:06.372096"]]
+  [1m[35m (8.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPuzzle Load (0.3ms)[0m  [1m[34mSELECT  "puzzles".* FROM "puzzles" ORDER BY "puzzles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "characters" ("name", "x_position", "y_position", "puzzle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Waldo"], ["x_position", 753], ["y_position", 276], ["puzzle_id", 3], ["created_at", "2019-03-16 16:26:06.383431"], ["updated_at", "2019-03-16 16:26:06.383431"]]
+  [1m[35m (8.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT  "puzzles".* FROM "puzzles" ORDER BY "puzzles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "characters" ("name", "x_position", "y_position", "puzzle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Wilma"], ["x_position", 517], ["y_position", 257], ["puzzle_id", 3], ["created_at", "2019-03-16 16:26:06.394137"], ["updated_at", "2019-03-16 16:26:06.394137"]]
+  [1m[35m (8.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPuzzle Load (0.3ms)[0m  [1m[34mSELECT  "puzzles".* FROM "puzzles" ORDER BY "puzzles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "characters" ("name", "x_position", "y_position", "puzzle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Wizard"], ["x_position", 1116], ["y_position", 650], ["puzzle_id", 3], ["created_at", "2019-03-16 16:26:06.405314"], ["updated_at", "2019-03-16 16:26:06.405314"]]
+  [1m[35m (7.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT  "puzzles".* FROM "puzzles" ORDER BY "puzzles"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "scores" ("number", "player_name", "puzzle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["number", 52055], ["player_name", "Logan3261"], ["puzzle_id", 1], ["created_at", "2019-03-16 16:26:06.424321"], ["updated_at", "2019-03-16 16:26:06.424321"]]
+  [1m[35m (11.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPuzzle Load (0.3ms)[0m  [1m[34mSELECT  "puzzles".* FROM "puzzles" WHERE "puzzles"."difficulty" = $1 LIMIT $2[0m  [["difficulty", "Medium"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "scores" ("number", "player_name", "puzzle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["number", 52055], ["player_name", "Logan3261"], ["puzzle_id", 2], ["created_at", "2019-03-16 16:26:06.438714"], ["updated_at", "2019-03-16 16:26:06.438714"]]
+  [1m[35m (8.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT  "puzzles".* FROM "puzzles" ORDER BY "puzzles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "scores" ("number", "player_name", "puzzle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["number", 52055], ["player_name", "Logan3261"], ["puzzle_id", 3], ["created_at", "2019-03-16 16:26:06.449577"], ["updated_at", "2019-03-16 16:26:06.449577"]]
+  [1m[35m (8.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT  "puzzles".* FROM "puzzles" ORDER BY "puzzles"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "scores" ("number", "player_name", "puzzle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["number", 5357], ["player_name", "Kelly7751"], ["puzzle_id", 1], ["created_at", "2019-03-16 16:26:06.460547"], ["updated_at", "2019-03-16 16:26:06.460547"]]
+  [1m[35m (8.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT  "puzzles".* FROM "puzzles" WHERE "puzzles"."difficulty" = $1 LIMIT $2[0m  [["difficulty", "Medium"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "scores" ("number", "player_name", "puzzle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["number", 5357], ["player_name", "Kelly7751"], ["puzzle_id", 2], ["created_at", "2019-03-16 16:26:06.471454"], ["updated_at", "2019-03-16 16:26:06.471454"]]
+  [1m[35m (8.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT  "puzzles".* FROM "puzzles" ORDER BY "puzzles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "scores" ("number", "player_name", "puzzle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["number", 5357], ["player_name", "Kelly7751"], ["puzzle_id", 3], ["created_at", "2019-03-16 16:26:06.482809"], ["updated_at", "2019-03-16 16:26:06.482809"]]
+  [1m[35m (8.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT  "puzzles".* FROM "puzzles" ORDER BY "puzzles"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "scores" ("number", "player_name", "puzzle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["number", 102364], ["player_name", "Kelly2393"], ["puzzle_id", 1], ["created_at", "2019-03-16 16:26:06.493964"], ["updated_at", "2019-03-16 16:26:06.493964"]]
+  [1m[35m (8.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT  "puzzles".* FROM "puzzles" WHERE "puzzles"."difficulty" = $1 LIMIT $2[0m  [["difficulty", "Medium"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "scores" ("number", "player_name", "puzzle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["number", 102364], ["player_name", "Kelly2393"], ["puzzle_id", 2], ["created_at", "2019-03-16 16:26:06.504661"], ["updated_at", "2019-03-16 16:26:06.504661"]]
+  [1m[35m (8.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT  "puzzles".* FROM "puzzles" ORDER BY "puzzles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "scores" ("number", "player_name", "puzzle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["number", 102364], ["player_name", "Kelly2393"], ["puzzle_id", 3], ["created_at", "2019-03-16 16:26:06.516018"], ["updated_at", "2019-03-16 16:26:06.516018"]]
+  [1m[35m (8.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT  "puzzles".* FROM "puzzles" ORDER BY "puzzles"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "scores" ("number", "player_name", "puzzle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["number", 7239], ["player_name", "John5432"], ["puzzle_id", 1], ["created_at", "2019-03-16 16:26:06.527385"], ["updated_at", "2019-03-16 16:26:06.527385"]]
+  [1m[35m (8.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT  "puzzles".* FROM "puzzles" WHERE "puzzles"."difficulty" = $1 LIMIT $2[0m  [["difficulty", "Medium"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "scores" ("number", "player_name", "puzzle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["number", 7239], ["player_name", "John5432"], ["puzzle_id", 2], ["created_at", "2019-03-16 16:26:06.538292"], ["updated_at", "2019-03-16 16:26:06.538292"]]
+  [1m[35m (8.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT  "puzzles".* FROM "puzzles" ORDER BY "puzzles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "scores" ("number", "player_name", "puzzle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["number", 7239], ["player_name", "John5432"], ["puzzle_id", 3], ["created_at", "2019-03-16 16:26:06.549752"], ["updated_at", "2019-03-16 16:26:06.549752"]]
+  [1m[35m (8.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT  "puzzles".* FROM "puzzles" ORDER BY "puzzles"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "scores" ("number", "player_name", "puzzle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["number", 54566], ["player_name", "John7537"], ["puzzle_id", 1], ["created_at", "2019-03-16 16:26:06.560683"], ["updated_at", "2019-03-16 16:26:06.560683"]]
+  [1m[35m (8.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPuzzle Load (0.1ms)[0m  [1m[34mSELECT  "puzzles".* FROM "puzzles" WHERE "puzzles"."difficulty" = $1 LIMIT $2[0m  [["difficulty", "Medium"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "scores" ("number", "player_name", "puzzle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["number", 54566], ["player_name", "John7537"], ["puzzle_id", 2], ["created_at", "2019-03-16 16:26:06.571587"], ["updated_at", "2019-03-16 16:26:06.571587"]]
+  [1m[35m (8.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT  "puzzles".* FROM "puzzles" ORDER BY "puzzles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "scores" ("number", "player_name", "puzzle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["number", 54566], ["player_name", "John7537"], ["puzzle_id", 3], ["created_at", "2019-03-16 16:26:06.583094"], ["updated_at", "2019-03-16 16:26:06.583094"]]
+  [1m[35m (8.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPuzzle Load (0.3ms)[0m  [1m[34mSELECT  "puzzles".* FROM "puzzles" ORDER BY "puzzles"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "scores" ("number", "player_name", "puzzle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["number", 84384], ["player_name", "Jane86"], ["puzzle_id", 1], ["created_at", "2019-03-16 16:26:06.594453"], ["updated_at", "2019-03-16 16:26:06.594453"]]
+  [1m[35m (7.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT  "puzzles".* FROM "puzzles" WHERE "puzzles"."difficulty" = $1 LIMIT $2[0m  [["difficulty", "Medium"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "scores" ("number", "player_name", "puzzle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["number", 84384], ["player_name", "Jane86"], ["puzzle_id", 2], ["created_at", "2019-03-16 16:26:06.605081"], ["updated_at", "2019-03-16 16:26:06.605081"]]
+  [1m[35m (8.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT  "puzzles".* FROM "puzzles" ORDER BY "puzzles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "scores" ("number", "player_name", "puzzle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["number", 84384], ["player_name", "Jane86"], ["puzzle_id", 3], ["created_at", "2019-03-16 16:26:06.619285"], ["updated_at", "2019-03-16 16:26:06.619285"]]
+  [1m[35m (5.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT  "puzzles".* FROM "puzzles" ORDER BY "puzzles"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "scores" ("number", "player_name", "puzzle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["number", 6176], ["player_name", "Logan6476"], ["puzzle_id", 1], ["created_at", "2019-03-16 16:26:06.627237"], ["updated_at", "2019-03-16 16:26:06.627237"]]
+  [1m[35m (8.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT  "puzzles".* FROM "puzzles" WHERE "puzzles"."difficulty" = $1 LIMIT $2[0m  [["difficulty", "Medium"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "scores" ("number", "player_name", "puzzle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["number", 6176], ["player_name", "Logan6476"], ["puzzle_id", 2], ["created_at", "2019-03-16 16:26:06.637921"], ["updated_at", "2019-03-16 16:26:06.637921"]]
+  [1m[35m (8.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT  "puzzles".* FROM "puzzles" ORDER BY "puzzles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "scores" ("number", "player_name", "puzzle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["number", 6176], ["player_name", "Logan6476"], ["puzzle_id", 3], ["created_at", "2019-03-16 16:26:06.649360"], ["updated_at", "2019-03-16 16:26:06.649360"]]
+  [1m[35m (8.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT  "puzzles".* FROM "puzzles" ORDER BY "puzzles"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "scores" ("number", "player_name", "puzzle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["number", 91094], ["player_name", "Ashley4312"], ["puzzle_id", 1], ["created_at", "2019-03-16 16:26:06.660699"], ["updated_at", "2019-03-16 16:26:06.660699"]]
+  [1m[35m (8.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT  "puzzles".* FROM "puzzles" WHERE "puzzles"."difficulty" = $1 LIMIT $2[0m  [["difficulty", "Medium"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "scores" ("number", "player_name", "puzzle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["number", 91094], ["player_name", "Ashley4312"], ["puzzle_id", 2], ["created_at", "2019-03-16 16:26:06.671201"], ["updated_at", "2019-03-16 16:26:06.671201"]]
+  [1m[35m (8.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT  "puzzles".* FROM "puzzles" ORDER BY "puzzles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "scores" ("number", "player_name", "puzzle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["number", 91094], ["player_name", "Ashley4312"], ["puzzle_id", 3], ["created_at", "2019-03-16 16:26:06.682523"], ["updated_at", "2019-03-16 16:26:06.682523"]]
+  [1m[35m (8.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT  "puzzles".* FROM "puzzles" ORDER BY "puzzles"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "scores" ("number", "player_name", "puzzle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["number", 9338], ["player_name", "Ashley6253"], ["puzzle_id", 1], ["created_at", "2019-03-16 16:26:06.693388"], ["updated_at", "2019-03-16 16:26:06.693388"]]
+  [1m[35m (8.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPuzzle Load (0.1ms)[0m  [1m[34mSELECT  "puzzles".* FROM "puzzles" WHERE "puzzles"."difficulty" = $1 LIMIT $2[0m  [["difficulty", "Medium"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "scores" ("number", "player_name", "puzzle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["number", 9338], ["player_name", "Ashley6253"], ["puzzle_id", 2], ["created_at", "2019-03-16 16:26:06.704357"], ["updated_at", "2019-03-16 16:26:06.704357"]]
+  [1m[35m (8.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT  "puzzles".* FROM "puzzles" ORDER BY "puzzles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "scores" ("number", "player_name", "puzzle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["number", 9338], ["player_name", "Ashley6253"], ["puzzle_id", 3], ["created_at", "2019-03-16 16:26:06.716067"], ["updated_at", "2019-03-16 16:26:06.716067"]]
+  [1m[35m (8.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT  "puzzles".* FROM "puzzles" ORDER BY "puzzles"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "scores" ("number", "player_name", "puzzle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["number", 6293], ["player_name", "Logan6344"], ["puzzle_id", 1], ["created_at", "2019-03-16 16:26:06.727319"], ["updated_at", "2019-03-16 16:26:06.727319"]]
+  [1m[35m (8.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPuzzle Load (0.1ms)[0m  [1m[34mSELECT  "puzzles".* FROM "puzzles" WHERE "puzzles"."difficulty" = $1 LIMIT $2[0m  [["difficulty", "Medium"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "scores" ("number", "player_name", "puzzle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["number", 6293], ["player_name", "Logan6344"], ["puzzle_id", 2], ["created_at", "2019-03-16 16:26:06.737802"], ["updated_at", "2019-03-16 16:26:06.737802"]]
+  [1m[35m (8.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT  "puzzles".* FROM "puzzles" ORDER BY "puzzles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "scores" ("number", "player_name", "puzzle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["number", 6293], ["player_name", "Logan6344"], ["puzzle_id", 3], ["created_at", "2019-03-16 16:26:06.749349"], ["updated_at", "2019-03-16 16:26:06.749349"]]
+  [1m[35m (8.4ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2019-03-16 09:27:05 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PuzzlesController#index as HTML
+  Rendering puzzles/index.html.erb within layouts/application
+  [1m[36mPuzzle Load (0.4ms)[0m  [1m[34mSELECT "puzzles".* FROM "puzzles"[0m
+  Rendered puzzles/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 128ms (Views: 114.3ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-16 09:33:19 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PuzzlesController#index as HTML
+  Rendering puzzles/index.html.erb within layouts/application
+  [1m[36mPuzzle Load (0.4ms)[0m  [1m[34mSELECT "puzzles".* FROM "puzzles"[0m
+  Rendered puzzles/index.html.erb within layouts/application (11.5ms)
+Completed 500 Internal Server Error in 206ms (ActiveRecord: 3.7ms)
+
+
+  
+LoadError (cannot load such file -- coffee_script):
+  
+app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb___1737798623399466022_70306069923820'
+Started GET "/" for 127.0.0.1 at 2019-03-16 09:34:24 -0700
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PuzzlesController#index as HTML
+  Rendering puzzles/index.html.erb within layouts/application
+  [1m[36mPuzzle Load (0.4ms)[0m  [1m[34mSELECT "puzzles".* FROM "puzzles"[0m
+  Rendered puzzles/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 145ms (Views: 123.9ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/puzzles/1" for 127.0.0.1 at 2019-03-16 09:35:01 -0700
+Processing by PuzzlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT  "puzzles".* FROM "puzzles" WHERE "puzzles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering puzzles/show.html.erb within layouts/application
+  [1m[36mScore Load (0.5ms)[0m  [1m[34mSELECT  "scores".* FROM "scores" WHERE "scores"."puzzle_id" = $1 ORDER BY "scores"."number" ASC LIMIT $2[0m  [["puzzle_id", 1], ["LIMIT", 10]]
+  Rendered puzzles/show.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 76ms (Views: 29.5ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-16 09:35:13 -0700
+Processing by PuzzlesController#index as HTML
+  Parameters: {"authenticity_token"=>"EGe2MSXzNGBLT/JxGfbPXhcPg6YU2CxnDlekmqTVRZd3bfsecSMSsfeQh+UhQttEEVWfqeIe24R1p2vCDs97KQ=="}
+  Rendering puzzles/index.html.erb within layouts/application
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT "puzzles".* FROM "puzzles"[0m
+  Rendered puzzles/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 33ms (Views: 32.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/puzzles/1" for 127.0.0.1 at 2019-03-16 09:36:19 -0700
+Processing by PuzzlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT  "puzzles".* FROM "puzzles" WHERE "puzzles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering puzzles/show.html.erb within layouts/application
+  [1m[36mScore Load (0.3ms)[0m  [1m[34mSELECT  "scores".* FROM "scores" WHERE "scores"."puzzle_id" = $1 ORDER BY "scores"."number" ASC LIMIT $2[0m  [["puzzle_id", 1], ["LIMIT", 10]]
+  Rendered puzzles/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 31ms (Views: 28.2ms | ActiveRecord: 0.5ms)
+
+
