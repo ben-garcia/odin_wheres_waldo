@@ -1,0 +1,10 @@
+.footer {
+  min-height: 5vh;
+  text-align: center;
+  padding-top: 0.7rem;
+
+  &__link {
+    text-decoration: none;
+    color: $primary-color;
+  }
+}

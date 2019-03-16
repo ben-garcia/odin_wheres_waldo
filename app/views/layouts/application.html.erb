@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>WheresWaldo</title>
+    <title>OdinWheresWaldo</title>
+
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -12,6 +13,30 @@
   </head>
 
   <body>
-    <%= yield %>
+
+    <header class="header">
+      <nav class="nav">
+        <ul>
+          <li class="nav__item">
+            <a class="item__link" href="/">OdinWheresWaldo</a>
+          </li> 
+        </ul>
+      </nav> 
+    </header>
+
+    <main class="main">
+      <%= yield %>
+    </main>
+
+    <footer class="footer">
+      <span class="footer__text">
+        Copyright &copy; 2019 Ben Garcia
+      </span>
+      <a class="footer__link" href="https://github.com/ben-garcia/odin_wheres_waldo/">
+        View Code
+      </a>
+    </footer>
+
   </body>
+
 </html>

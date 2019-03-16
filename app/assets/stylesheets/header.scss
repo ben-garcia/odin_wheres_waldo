@@ -1,0 +1,22 @@
+@import "variables.scss";
+
+/* HEADER */
+.header {
+  display: flex;
+  align-items: center;
+  height: 5vh;
+  background-color: $primary-color;
+  color: $text-color-white;
+  font-weight: $font-weight-bold;
+  font-size: $header-font-size;
+
+  .nav__item {
+    list-style: none;
+
+    .item__link {
+      text-decoration: none;
+      color: $text-color-white;
+      padding: 1rem;
+    }
+  }
+}
