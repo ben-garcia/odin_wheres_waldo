@@ -30,6 +30,13 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+gem 'loofah'
+gem 'rails-html-sanitizer'
+gem 'rack'
+gem 'activejob'
+gem 'nokogiri'
+gem 'actionview'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

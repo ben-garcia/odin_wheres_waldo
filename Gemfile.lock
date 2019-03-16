@@ -184,15 +184,21 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  actionview
+  activejob
   byebug
   capybara (~> 2.13)
   coffee-rails (~> 4.2)
   jbuilder (~> 2.5)
   jquery-rails (~> 4.3, >= 4.3.1)
   listen (>= 3.0.5, < 3.2)
+  loofah
+  nokogiri
   pg (~> 0.18)
   puma (~> 3.7)
+  rack
   rails (~> 5.1.2)
+  rails-html-sanitizer
   rails_12factor
   sass-rails (~> 5.0)
   selenium-webdriver
