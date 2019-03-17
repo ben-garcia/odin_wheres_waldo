@@ -1,4 +1,4 @@
-<h1 class="main__title">Where's Waldo?</h1>
+<h1 class="title">Where's Waldo?</h1>
 
 <section class="puzzles">
   <ul class="puzzles__items">
@@ -14,7 +14,7 @@
             <h2 class="puzzle__title"><%= puzzle.title %></h2> 
             <p class="puzzle__difficulty">Difficulty: <%= puzzle.difficulty %></p>
             <button class="info__button" id="<%= puzzle.title %>" type="button">Play</button>
-            <button class="info__button" id="<%= puzzle.title %>" type="button">High Scores</button>
+            <%= link_to "High Scores", puzzle_path(puzzle), class: "info__button" %>
           </div>
         </article>
       </li>
