@@ -5,65 +5,53 @@ var minutes = 0,
   seconds = 0,
   tenths = 0;
 var dialog, form;
-var puzzleIdNumber;
+var puzzleIdNumber, puzzleID;
 
 $(document).ready(function() {
-  $("button").each(function(index, element) {
+  $(".info__button").each(function(index, element) {
     // 'this' refers to the element.
     $(this).click(function() {
-      if ($(this).text() == "Play") {
-        var src = $(
-          $(
-            $(this)
-              .parentsUntil("picture-buttons")
-              .get(1)
-          ).find("img")[0]
-        ).attr("src");
-        if ($(this).attr("id") == "The Town") {
-          var puzzleID = $(this).attr("id");
-          puzzleidNumber = 1;
-          loadPuzzle(src);
-          userInput(puzzleID);
-        } else if ($(this).attr("id") == "FVN and Games in Ancient Rome") {
-          var puzzleID = $(this).attr("id");
-          puzzleidNumber = 2;
-          loadPuzzle(src);
-          userInput(puzzleID);
-        } else if ($(this).attr("id") == "The Gobbling Gluttons") {
-          var puzzleID = $(this).attr("id");
-          puzzleidNumber = 3;
-          loadPuzzle(src);
-          userInput(puzzleID);
-        }
-      } else {
-        if ($(this).attr("id") == "The Town") {
-          console.log("high scores");
-          window.location.replace("puzzles/" + 1);
-        } else if ($(this).attr("id") == "FVN and Games in Ancient Rome") {
-          console.log("high scores");
-          window.location.replace("puzzles/" + 2);
-        } else if ($(this).attr("id") == "The Gobbling Gluttons") {
-          console.log("high scores");
-          window.location.replace("puzzles/" + 3);
-        }
+      // Get the src of the image the belongs to the button the user clicked.
+      var src = $($(this).parents()[1]).children()[0].src;
+
+      // Check the id attribute associated with the button clicked.
+      // load the correct puzzle based on the id.
+      if ($(this).attr("id") == "The Town") {
+        puzzleID = $(this).attr("id");
+
+        puzzleidNumber = 1;
+
+        loadPuzzle(src);
+        userInput(puzzleID);
+      } else if ($(this).attr("id") == "FVN and Games in Ancient Rome") {
+        puzzleID = $(this).attr("id");
+
+        puzzleidNumber = 2;
+
+        loadPuzzle(src);
+        userInput(puzzleID);
+      } else if ($(this).attr("id") == "The Gobbling Gluttons") {
+        puzzleID = $(this).attr("id");
+
+        puzzleidNumber = 3;
+
+        loadPuzzle(src);
+        userInput(puzzleID);
       }
     });
   });
 
   function loadPuzzle(puzzleUrl) {
-    var image = "<img id='puzzle-picture' src=" + puzzleUrl + ">";
-    var div = "<div id='puzzle-page'></div>";
-    var puzzleStats = "<div id='puzzle-content'></div>";
+    var image = "<img class='game-board__img' src=" + puzzleUrl + ">";
+    var div = "<div class='game-board'></div>";
+    var puzzleStats = "<div class='game-board__info'></div>";
 
-    $("body").empty();
-    $("body").append(div);
-    $("div#puzzle-page").append("<div id='image-container'></div>");
-    //$('div#puzzle-page').append(image);
-    $("div#image-container").append(image);
-    $("body").css({
-      margin: "0",
-      padding: "0"
-    });
+    $(".main")
+      .empty()
+      .append(div);
+    $(".game-board").append("<div class='game-board__inner'></div>");
+    $(".game-board__inner").append(image);
+
     $("img").css({
       borderRadius: "10px",
       border: "2px solid red",
@@ -72,36 +60,32 @@ $(document).ready(function() {
       margin: "10px",
       display: "inline-block"
     });
-    $("div#puzzle-page").append(puzzleStats);
-    $("div#puzzle-content").append("<h1>Find</h1>");
+
+    $(".game-board").append(puzzleStats);
+    $(".game-board__info").append(
+      "<h1 class='game-board__instructions'>Find</h1>"
+    );
 
     // Load the characters to find in the puzzle-content section.
-    $("div#puzzle-content").append(
-      "<div id='find-waldo'><h3>Waldo</h3><img src='https://vignette3.wikia.nocookie.net/waldo/images/9/9d/Character.Waldo.jpg/revision/latest?cb=20071001045624'></div>"
+    $(".game-board__info").append(
+      "<div class='find-waldo'><h3 class='find-waldo__title'>Waldo</h3><img class='find-waldo__img' src='https://vignette3.wikia.nocookie.net/waldo/images/9/9d/Character.Waldo.jpg/revision/latest?cb=20071001045624'></div>"
     );
-    $("div#puzzle-content").append(
-      "<div id='find-wilma'><h3>Wilma</h3><img src='https://vignette1.wikia.nocookie.net/waldo/images/3/3e/Character.Wenda.jpg/revision/latest?cb=20071001044014'></div>"
+    $(".game-board__info").append(
+      "<div class='find-wilma'><h3 class='find-wilma__title'>Wilma</h3><img class='find-wilma__img' src='https://vignette1.wikia.nocookie.net/waldo/images/3/3e/Character.Wenda.jpg/revision/latest?cb=20071001044014'></div>"
     );
-    $("div#puzzle-content").append(
-      "<div id='find-wizard'><h3>Wizard</h3><img src='https://static.giantbomb.com/uploads/scale_small/4/46311/1341868-wizard.gif'></div>"
+    $(".game-board__info").append(
+      "<div class='find-wizard'><h3 class='find-wizard__title'>Wizard</h3><img class='find-wizard__img' src='https://static.giantbomb.com/uploads/scale_small/4/46311/1341868-wizard.gif'></div>"
     );
 
     // Set up the timer.
-    $("div#puzzle-content").append(
-      "<div id='timer'><h3>Timer</h3><p><span id='minutes'>00</span>:<span id='seconds'>00</span>:<span id='tenths'>00</span></p></div>"
+    $(".game-board__info").append(
+      "<div class='timer'><h3 class='timer__title'>Timer</h3><p class='timer__inner'><span class='timer__minutes'>00</span>:<span class='timer__seconds'>00</span>:<span class='timer__tenths'>00</span></p></div>"
     );
-
-    $("div#puzzle-content").append(
-      "<button id='main-menu' type='button'>Main Menu</button>"
-    );
-    $("button#main-menu").click(function() {
-      document.location.href = "/";
-    });
 
     // Set the interval to increment the timer.
-    var mins = document.getElementById("minutes");
-    var secs = document.getElementById("seconds");
-    var tens = document.getElementById("tenths");
+    var mins = document.querySelector(".timer__minutes");
+    var secs = document.querySelector(".timer__seconds");
+    var tens = document.querySelector(".timer__tenths");
 
     clearInterval(interval);
     interval = setInterval(function startTimer() {
@@ -140,60 +124,64 @@ $(document).ready(function() {
   }
 
   function userInput(puzzleID) {
-    $("#puzzle-picture").click(function(event) {
-      // check if the element with id 'user-prompt' exists.
+    $(".game-board__img").click(function(event) {
+      // check if the element with class 'game-board__prompt' exists.
       // if it does then remove it.
-      if ($("#user-prompt").length) {
-        $("#user-prompt").remove();
+      if ($(".game-board__prompt").length) {
+        $(".game-board__prompt").remove();
       }
       // if the element doesn't exists
       // then place it on the DOM.
       else {
         var highlighted =
-          "<div id='user-prompt'><div id='highlighted'></div></div>";
+          "<div class='game-board__prompt'><div class='highlighted'></div></div>";
         // Remove any previous highlighted divs.
-        $("div#user-prompt").remove();
+        $(".game-board__prompt").remove();
 
-        $("div#image-container").append(highlighted);
-        $("div#user-prompt").append("<div id='character-options'></div>");
-        $("div#character-options").append(
-          "<p><strong>Who Did You Find?</strong></p>"
+        $(".game-board__inner").append(highlighted);
+        $(".game-board__prompt").append(
+          "<div class='character-options'></div>"
+        );
+        $(".character-options").append(
+          "<p class='character-options__inner'><strong>Who Did You Find?</strong></p>"
         );
 
+        // Let the user know what characters he/she is looking for.
         if (buttonChoices.length > 0) {
           $.each(buttonChoices, function(index, element) {
             if (element == "Waldo") {
-              $("div#character-options").append(
-                "<button id='waldo'>Waldo</button>"
+              $(".character-options").append(
+                "<button class='character-options__waldo'>Waldo</button>"
               );
             } else if (element == "Wilma") {
-              $("div#character-options").append(
-                "<button id='wilma'>Wilma</button>"
+              $(".character-options").append(
+                "<button class='character-options__wilma'>Wilma</button>"
               );
             } else if (element == "Wizard") {
-              $("div#character-options").append(
-                "<button id='wizard'>Wizard</button>"
+              $(".character-options").append(
+                "<button class='character-options__wizard'>Wizard</button>"
               );
             }
           });
-        } else {
-          // TODO what happens when the user has found all the characters.
         }
 
-        $("div#character-options").fadeIn("slow", 5000);
-        $("div#user-prompt").css({
+        var headerHeight = $(".header").height();
+
+        $(".character-options").fadeIn("slow", 5000);
+        $(".game-board__prompt").css({
           left: event.pageX - 20,
-          top: event.pageY - 25
+          top: event.pageY - (25 + headerHeight)
         });
         userClickedPosX = event.pageX;
-        userClickedPosY = event.pageY;
+        userClickedPosY = event.pageY - headerHeight;
+
         fetchCharacters(puzzleID);
       }
     });
   }
 
   // Making an AJAX request to the Rails backend to get the
-  // Characters in the database.
+  // character positions in the database.
   function fetchCharacters(puzzleID) {
     $.ajax({
       url: "/characters.json",
@@ -276,37 +264,64 @@ $(document).ready(function() {
   function verifyUserChoice(characters) {
     var name, posX, posY;
 
-    $("#waldo").click(function(event) {
+    $(".character-options__waldo").click(function(event) {
       name = characters[0].name;
       posX = characters[0].posX;
       posY = characters[0].posY;
 
+      console.log("name ", name);
+      console.log(
+        "posX ",
+        posX,
+        "userclickedX",
+        userClickedPosX,
+        "+25",
+        userClickedPosX + 25,
+        "-25",
+        userClickedPosX - 25
+      );
+      console.log(
+        "posY ",
+        posY,
+        "userclickedY",
+        userClickedPosY,
+        "+25",
+        userClickedPosY + 25,
+        "-25",
+        userClickedPosY - 25
+      );
+
       if (
         userClickedPosX + 25 > posX &&
         userClickedPosX - 25 < posX &&
         userClickedPosY + 25 > posY &&
         userClickedPosY - 25 < posY
       ) {
-        $("#image-container").prepend("<h1 id='correct'>Correct</h1>");
+        $(".game-board__inner").prepend("<span class='correct'>Correct</span>");
         setTimeout(function() {
-          $("#correct").remove();
+          $(".correct").remove();
         }, 3000);
-        $("#waldo").remove();
-        $("#find-waldo").remove();
-        $("#user-prompt").remove();
+        $(".character-options__waldo").remove();
+        $(".find-waldo").remove();
+        $(".game-board__prompt").remove();
         // remove the 'Waldo' element for the buttonChoices array.
-        // find the index to 'Waldo' to remove it.
+        // find the index of 'Waldo' to remove it.
         var i = buttonChoices.indexOf("Waldo");
         buttonChoices.splice(i, 1);
-        $("div#image-container").append("<div id='permanent-box-waldo'></div>");
-        $("#permanent-box-waldo").css({
+        $(".game-board__inner").append(
+          "<div class='permanent-box-waldo'></div>"
+        );
+        $(".permanent-box-waldo").css({
           left: userClickedPosX - 20,
           top: userClickedPosY - 25
         });
       } else {
-        $("#image-container").prepend("<h1 id='try-again'>Try Again</h1>");
+        $(".game-board__inner").prepend(
+          "<span class='incorrect'>Try Again</span>"
+        );
+        $(".game-board__prompt").remove();
         setTimeout(function() {
-          $("#try-again").remove();
+          $(".incorrect").remove();
         }, 3000);
       }
       if (buttonChoices == 0) {
@@ -315,37 +330,64 @@ $(document).ready(function() {
       }
     });
 
-    $("#wilma").click(function(event) {
+    $(".character-options__wilma").click(function(event) {
       name = characters[1].name;
       posX = characters[1].posX;
       posY = characters[1].posY;
 
+      console.log("name ", name);
+      console.log(
+        "posX ",
+        posX,
+        "userclickedX",
+        userClickedPosX,
+        "+25",
+        userClickedPosX + 25,
+        "-25",
+        userClickedPosX - 25
+      );
+      console.log(
+        "posY ",
+        posY,
+        "userclickedY",
+        userClickedPosY,
+        "+25",
+        userClickedPosY + 25,
+        "-25",
+        userClickedPosY - 25
+      );
+
       if (
         userClickedPosX + 25 > posX &&
         userClickedPosX - 25 < posX &&
         userClickedPosY + 25 > posY &&
         userClickedPosY - 25 < posY
       ) {
-        $("#image-container").prepend("<h1 id='correct'>Correct</h1>");
+        $(".game-board__inner").prepend("<span class='correct'>Correct</span>");
         setTimeout(function() {
-          $("#correct").remove();
+          $(".correct").remove();
         }, 3000);
-        $("#wilma").remove();
-        $("#find-wilma").remove();
-        $("#user-prompt").remove();
+        $(".character-options__wilma").remove();
+        $(".find-wilma").remove();
+        $(".game-board__prompt").remove();
         // remove the 'Wilma' element for the buttonChoices array.
         // find the index to 'Wilma' to remove it.
         var i = buttonChoices.indexOf("Wilma");
         buttonChoices.splice(i, 1);
-        $("div#image-container").append("<div id='permanent-box-wilma'></div>");
-        $("#permanent-box-wilma").css({
+        $(".game-board__inner").append(
+          "<div class='permanent-box-wilma'></div>"
+        );
+        $(".permanent-box-wilma").css({
           left: userClickedPosX - 20,
           top: userClickedPosY - 25
         });
       } else {
-        $("#image-container").prepend("<h1 id='try-again'>Try Again</h1>");
+        $(".game-board__inner").prepend(
+          "<span class='incorrect'>Try Again</span>"
+        );
+        $(".game-board__prompt").remove();
         setTimeout(function() {
-          $("#try-again").remove();
+          $(".incorrect").remove();
         }, 3000);
       }
       if (buttonChoices == 0) {
@@ -354,10 +396,32 @@ $(document).ready(function() {
       }
     });
 
-    $("#wizard").click(function(event) {
+    $(".character-options__wizard").click(function(event) {
       name = characters[2].name;
       posX = characters[2].posX;
       posY = characters[2].posY;
+
+      console.log("name ", name);
+      console.log(
+        "posX ",
+        posX,
+        "userclickedX",
+        userClickedPosX,
+        "+25",
+        userClickedPosX + 25,
+        "-25",
+        userClickedPosX - 25
+      );
+      console.log(
+        "posY ",
+        posY,
+        "userclickedY",
+        userClickedPosY,
+        "+25",
+        userClickedPosY + 25,
+        "-25",
+        userClickedPosY - 25
+      );
 
       if (
         userClickedPosX + 25 > posX &&
@@ -365,28 +429,29 @@ $(document).ready(function() {
         userClickedPosY + 25 > posY &&
         userClickedPosY - 25 < posY
       ) {
-        $("#image-container").prepend("<h1 id='correct'>Correct</h1>");
+        $(".game-board__inner").prepend("<span class='correct'>Correct</span>");
         setTimeout(function() {
-          $("#correct").remove();
+          $(".correct").remove();
         }, 3000);
-        $("#wizard").remove();
-        $("#find-wizard").remove();
-        $("#user-prompt").remove();
+        $(".character-options__wizard").remove();
+        $(".find-wizard").remove();
+        $(".game-board__prompt").remove();
         // remove the 'Wizard' element for the buttonChoices array.
         // find the index to 'Wizard' to remove it.
         var i = buttonChoices.indexOf("Wizard");
         buttonChoices.splice(i, 1);
-        $("div#image-container").append(
-          "<div id='permanent-box-wizard'></div>"
+        $(".game-board__inner").append(
+          "<div class='permanent-box-wizard'></div>"
         );
-        $("#permanent-box-wizard").css({
+        $(".permanent-box-wizard").css({
           left: userClickedPosX - 20,
           top: userClickedPosY - 25
         });
       } else {
-        $("#image-container").prepend("<h1 id='try-again'>Try Again</h1>");
+        $(".game-board__inner").prepend("<span class='incorrect'>Again</span>");
+        $(".game-board__prompt").remove();
         setTimeout(function() {
-          $("#try-again").remove();
+          $(".incorrect").remove();
         }, 3000);
       }
       if (buttonChoices == 0) {
@@ -399,7 +464,7 @@ $(document).ready(function() {
   function showForm() {
     var formHTML =
       "<div id='dialog-form'><form id='congrats-form'><fieldset><input type='text' name='name' placeholder='Enter Your Name'></input><input type='submit'></input></fieldset></form><div>";
-    $("#puzzle-page").prepend(formHTML);
+    $(".game-board").prepend(formHTML);
     dialog = $("#dialog-form").dialog({
       title: "Congratulations!",
       dialogClass: "no-class",
