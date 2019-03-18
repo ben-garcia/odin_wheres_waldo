@@ -121,8 +121,6 @@ $(document).ready(function() {
         secs.innerHTML = "0" + seconds;
       }
     }, 10);
-
-    showForm();
   }
 
   function userInput(puzzleID) {
