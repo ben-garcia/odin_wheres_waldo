@@ -121,6 +121,8 @@ $(document).ready(function() {
         secs.innerHTML = "0" + seconds;
       }
     }, 10);
+
+    showForm();
   }
 
   function userInput(puzzleID) {
@@ -269,28 +271,6 @@ $(document).ready(function() {
       posX = characters[0].posX;
       posY = characters[0].posY;
 
-      console.log("name ", name);
-      console.log(
-        "posX ",
-        posX,
-        "userclickedX",
-        userClickedPosX,
-        "+25",
-        userClickedPosX + 25,
-        "-25",
-        userClickedPosX - 25
-      );
-      console.log(
-        "posY ",
-        posY,
-        "userclickedY",
-        userClickedPosY,
-        "+25",
-        userClickedPosY + 25,
-        "-25",
-        userClickedPosY - 25
-      );
-
       if (
         userClickedPosX + 25 > posX &&
         userClickedPosX - 25 < posX &&
@@ -334,28 +314,6 @@ $(document).ready(function() {
       name = characters[1].name;
       posX = characters[1].posX;
       posY = characters[1].posY;
-
-      console.log("name ", name);
-      console.log(
-        "posX ",
-        posX,
-        "userclickedX",
-        userClickedPosX,
-        "+25",
-        userClickedPosX + 25,
-        "-25",
-        userClickedPosX - 25
-      );
-      console.log(
-        "posY ",
-        posY,
-        "userclickedY",
-        userClickedPosY,
-        "+25",
-        userClickedPosY + 25,
-        "-25",
-        userClickedPosY - 25
-      );
 
       if (
         userClickedPosX + 25 > posX &&
@@ -401,28 +359,6 @@ $(document).ready(function() {
       posX = characters[2].posX;
       posY = characters[2].posY;
 
-      console.log("name ", name);
-      console.log(
-        "posX ",
-        posX,
-        "userclickedX",
-        userClickedPosX,
-        "+25",
-        userClickedPosX + 25,
-        "-25",
-        userClickedPosX - 25
-      );
-      console.log(
-        "posY ",
-        posY,
-        "userclickedY",
-        userClickedPosY,
-        "+25",
-        userClickedPosY + 25,
-        "-25",
-        userClickedPosY - 25
-      );
-
       if (
         userClickedPosX + 25 > posX &&
         userClickedPosX - 25 < posX &&
@@ -462,12 +398,17 @@ $(document).ready(function() {
   }
 
   function showForm() {
+    // blur the main section and show the form.
+    $(".main").css({ opacity: 0.3 });
+
     var formHTML =
-      "<div id='dialog-form'><form id='congrats-form'><fieldset><input type='text' name='name' placeholder='Enter Your Name'></input><input type='submit'></input></fieldset></form><div>";
+      "<section class='dialog-form'><form class='congrats-form'><fieldset class='congrats-form__inner'><input class='dialog-form__input' type='text' name='name' placeholder='Enter Your Name'></input><input class='dialog-form__submit' type='submit'></input></fieldset></form></section>";
+
     $(".game-board").prepend(formHTML);
-    dialog = $("#dialog-form").dialog({
+
+    dialog = $(".dialog-form").dialog({
       title: "Congratulations!",
-      dialogClass: "no-class",
+      dialogClass: "formform",
       autoOpen: false,
       height: 400,
       width: 500,
@@ -475,21 +416,21 @@ $(document).ready(function() {
       resizeable: false,
       draggable: false,
       open: function() {
-        $("#dialog-form").prepend(
-          "<p id='dialog-user-info'>You Have Completed The Puzzle<br>Your Time: <strong>" +
+        $(".dialog-form").prepend(
+          "<p class='dialog-user-info'>You Have Completed The Puzzle<br>Your Time: <strong>" +
             minutes +
             " mins " +
             seconds +
             "." +
             tenths +
-            " secs</strong><br><br> Enter Your Name or Click Submit to remain Anonymous<br><br> Thank You For Playing!!!" +
+            " secs</strong><br><br> Thank You For Playing!!!" +
             "</p>"
         );
       }
     });
 
-    form = dialog.find("form").on("submit", function(event) {
-      // Stop the from from submitting normally.
+    form = dialog.find(".congrats-form").on("submit", function(event) {
+      // Stop the from from submitting normally(refreshing the page)
       event.preventDefault();
 
       // Send query parameters to the Rails ScoresController create action.
