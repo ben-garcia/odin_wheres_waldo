@@ -13,10 +13,13 @@
   .nav__item {
     list-style: none;
 
-    .item__link {
+    .nav__link {
       text-decoration: none;
       color: $text-color-white;
       padding: 1rem;
     }
   }
+}
+
+.footer {
 }
