@@ -36231,3 +36231,43 @@ Processing by PuzzlesController#index as HTML
 Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/" for 2600:1700:9480:43d0:e056:9662:1e43:9900 at 2019-03-18 09:29:50 -0700
+Cannot render console from 2600:1700:9480:43d0:e056:9662:1e43:9900! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PuzzlesController#index as HTML
+  Rendering puzzles/index.html.erb within layouts/application
+  [1m[36mPuzzle Load (0.3ms)[0m  [1m[34mSELECT "puzzles".* FROM "puzzles"[0m
+  Rendered puzzles/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 20ms (Views: 18.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/characters.json" for 2600:1700:9480:43d0:e056:9662:1e43:9900 at 2019-03-18 09:30:11 -0700
+Cannot render console from 2600:1700:9480:43d0:e056:9662:1e43:9900! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CharactersController#index as JSON
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-18 09:31:42 -0700
+Processing by PuzzlesController#index as HTML
+  Rendering puzzles/index.html.erb within layouts/application
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT "puzzles".* FROM "puzzles"[0m
+  Rendered puzzles/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 81ms (Views: 79.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-18 09:32:15 -0700
+Processing by PuzzlesController#index as HTML
+  Rendering puzzles/index.html.erb within layouts/application
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT "puzzles".* FROM "puzzles"[0m
+  Rendered puzzles/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 17ms (Views: 16.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-18 09:32:20 -0700
+Processing by PuzzlesController#index as HTML
+  Rendering puzzles/index.html.erb within layouts/application
+  [1m[36mPuzzle Load (0.3ms)[0m  [1m[34mSELECT "puzzles".* FROM "puzzles"[0m
+  Rendered puzzles/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.3ms)
+
+
