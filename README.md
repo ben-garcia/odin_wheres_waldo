@@ -6,7 +6,7 @@ App is [live](https://odinwhereswaldo.herokuapp.com/)
 
 ## Instructions
 
-> Make sure you have [postgreSQL](https://www.postgresql.org/) installed.
+> Make sure you have [PostgreSQL](https://www.postgresql.org/) and a JavaScript runtime like [Node](https://nodejs.org/) installed.
 
 1. clone the repository
 
