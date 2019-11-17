@@ -36271,3 +36271,384 @@ Processing by PuzzlesController#index as HTML
 Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-11-14 08:33:55 -0800
+  [1m[35m (13.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PuzzlesController#index as HTML
+  Rendering puzzles/index.html.erb within layouts/application
+  [1m[36mPuzzle Load (48.7ms)[0m  [1m[34mSELECT "puzzles".* FROM "puzzles"[0m
+  Rendered puzzles/index.html.erb within layouts/application (86.8ms)
+Completed 200 OK in 10829ms (Views: 10724.5ms | ActiveRecord: 72.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-11-14 08:34:48 -0800
+Processing by PuzzlesController#index as HTML
+  Rendering puzzles/index.html.erb within layouts/application
+  [1m[36mPuzzle Load (0.3ms)[0m  [1m[34mSELECT "puzzles".* FROM "puzzles"[0m
+  Rendered puzzles/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-11-16 15:53:36 -0800
+  [1m[35m (79.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PuzzlesController#index as HTML
+  Rendering puzzles/index.html.erb within layouts/application
+  [1m[36mPuzzle Load (49.0ms)[0m  [1m[34mSELECT "puzzles".* FROM "puzzles"[0m
+  Rendered puzzles/index.html.erb within layouts/application (100.7ms)
+Completed 200 OK in 23977ms (Views: 23851.2ms | ActiveRecord: 83.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-11-16 16:01:37 -0800
+Processing by PuzzlesController#index as HTML
+  Rendering puzzles/index.html.erb within layouts/application
+  [1m[36mPuzzle Load (0.3ms)[0m  [1m[34mSELECT "puzzles".* FROM "puzzles"[0m
+  Rendered puzzles/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 303ms (Views: 301.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-11-17 11:50:55 -0800
+  [1m[35m (18.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PuzzlesController#index as HTML
+  Rendering puzzles/index.html.erb within layouts/application
+  [1m[36mPuzzle Load (48.7ms)[0m  [1m[34mSELECT "puzzles".* FROM "puzzles"[0m
+  Rendered puzzles/index.html.erb within layouts/application (128.2ms)
+Completed 200 OK in 1635ms (Views: 1535.0ms | ActiveRecord: 83.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-11-17 11:57:51 -0800
+Processing by PuzzlesController#index as HTML
+  Rendering puzzles/index.html.erb within layouts/application
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT "puzzles".* FROM "puzzles"[0m
+  Rendered puzzles/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-11-17 11:58:08 -0800
+Processing by PuzzlesController#index as HTML
+  Rendering puzzles/index.html.erb within layouts/application
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT "puzzles".* FROM "puzzles"[0m
+  Rendered puzzles/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-11-17 11:58:19 -0800
+Processing by PuzzlesController#index as HTML
+  Rendering puzzles/index.html.erb within layouts/application
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT "puzzles".* FROM "puzzles"[0m
+  Rendered puzzles/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-11-17 11:59:57 -0800
+Processing by PuzzlesController#index as HTML
+  Rendering puzzles/index.html.erb within layouts/application
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT "puzzles".* FROM "puzzles"[0m
+  Rendered puzzles/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/characters.json" for 127.0.0.1 at 2019-11-17 12:00:02 -0800
+Processing by CharactersController#index as JSON
+  [1m[36mCharacter Load (54.5ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+Completed 200 OK in 92ms (Views: 6.6ms | ActiveRecord: 57.1ms)
+
+
+Started GET "/characters.json" for 127.0.0.1 at 2019-11-17 12:00:21 -0800
+Processing by CharactersController#index as JSON
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/characters.json" for 127.0.0.1 at 2019-11-17 12:00:22 -0800
+Processing by CharactersController#index as JSON
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/characters.json" for 127.0.0.1 at 2019-11-17 12:00:25 -0800
+Processing by CharactersController#index as JSON
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/characters.json" for 127.0.0.1 at 2019-11-17 12:00:34 -0800
+Processing by CharactersController#index as JSON
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/characters.json" for 127.0.0.1 at 2019-11-17 12:00:35 -0800
+Processing by CharactersController#index as JSON
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/characters.json" for 127.0.0.1 at 2019-11-17 12:00:37 -0800
+Processing by CharactersController#index as JSON
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/ScoreCreate" for 127.0.0.1 at 2019-11-17 12:00:46 -0800
+Processing by ScoresController#create as */*
+  Parameters: {"player_name"=>"benji", "number"=>"3674", "puzzle_id"=>"2"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT  "puzzles".* FROM "puzzles" WHERE "puzzles"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (68.0ms)[0m  [1m[32mINSERT INTO "scores" ("number", "player_name", "puzzle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["number", 3674], ["player_name", "benji"], ["puzzle_id", 2], ["created_at", "2019-11-17 20:00:46.269752"], ["updated_at", "2019-11-17 20:00:46.269752"]]
+  [1m[35m (9.2ms)[0m  [1m[35mCOMMIT[0m
+No template found for ScoresController#create, rendering head :no_content
+Completed 204 No Content in 282ms (ActiveRecord: 80.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-11-17 12:00:46 -0800
+Processing by PuzzlesController#index as HTML
+  Rendering puzzles/index.html.erb within layouts/application
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT "puzzles".* FROM "puzzles"[0m
+  Rendered puzzles/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 16ms (Views: 14.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-11-17 12:10:45 -0800
+Processing by PuzzlesController#index as HTML
+  Rendering puzzles/index.html.erb within layouts/application
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT "puzzles".* FROM "puzzles"[0m
+  Rendered puzzles/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 176ms (Views: 175.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-11-17 12:17:32 -0800
+Processing by PuzzlesController#index as HTML
+  Rendering puzzles/index.html.erb within layouts/application
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT "puzzles".* FROM "puzzles"[0m
+  Rendered puzzles/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 27ms (Views: 19.8ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-11-17 12:22:02 -0800
+Processing by PuzzlesController#index as HTML
+  Rendering puzzles/index.html.erb within layouts/application
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT "puzzles".* FROM "puzzles"[0m
+  Rendered puzzles/index.html.erb within layouts/application (745.9ms)
+Completed 500 Internal Server Error in 751ms (ActiveRecord: 2.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `%' for #<Array:0x007ff0601e14e8>):
+    19:           </div>
+    20:         </article>
+    21:       </li>
+    22:     <% end %>
+    23:   </ul>
+    24: </section>
+  
+app/views/puzzles/index.html.erb:22:in `_app_views_puzzles_index_html_erb___863697692261152765_70335223634100'
+Started GET "/" for 127.0.0.1 at 2019-11-17 12:22:14 -0800
+Processing by PuzzlesController#index as HTML
+  Rendering puzzles/index.html.erb within layouts/application
+  [1m[36mPuzzle Load (0.3ms)[0m  [1m[34mSELECT "puzzles".* FROM "puzzles"[0m
+  Rendered puzzles/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-11-17 12:22:26 -0800
+Processing by PuzzlesController#index as HTML
+  Rendering puzzles/index.html.erb within layouts/application
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT "puzzles".* FROM "puzzles"[0m
+  Rendered puzzles/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-11-17 12:46:15 -0800
+Processing by PuzzlesController#index as HTML
+  Rendering puzzles/index.html.erb within layouts/application
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT "puzzles".* FROM "puzzles"[0m
+  Rendered puzzles/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 45ms (Views: 43.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-11-17 12:46:27 -0800
+Processing by PuzzlesController#index as HTML
+  Rendering puzzles/index.html.erb within layouts/application
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT "puzzles".* FROM "puzzles"[0m
+  Rendered puzzles/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-11-17 12:48:12 -0800
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PuzzlesController#index as HTML
+  Rendering puzzles/index.html.erb within layouts/application
+  [1m[36mPuzzle Load (0.4ms)[0m  [1m[34mSELECT "puzzles".* FROM "puzzles"[0m
+  Rendered puzzles/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 362ms (Views: 349.1ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-11-17 12:48:23 -0800
+Processing by PuzzlesController#index as HTML
+  Rendering puzzles/index.html.erb within layouts/application
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT "puzzles".* FROM "puzzles"[0m
+  Rendered puzzles/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-11-17 12:48:23 -0800
+Processing by PuzzlesController#index as HTML
+  Rendering puzzles/index.html.erb within layouts/application
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT "puzzles".* FROM "puzzles"[0m
+  Rendered puzzles/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 19ms (Views: 18.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-11-17 12:48:25 -0800
+Processing by PuzzlesController#index as HTML
+  Rendering puzzles/index.html.erb within layouts/application
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT "puzzles".* FROM "puzzles"[0m
+  Rendered puzzles/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-11-17 12:48:28 -0800
+Processing by PuzzlesController#index as HTML
+  Rendering puzzles/index.html.erb within layouts/application
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT "puzzles".* FROM "puzzles"[0m
+  Rendered puzzles/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 18ms (Views: 16.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-11-17 12:51:51 -0800
+Processing by PuzzlesController#index as HTML
+  Rendering puzzles/index.html.erb within layouts/application
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT "puzzles".* FROM "puzzles"[0m
+  Rendered puzzles/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 149ms (Views: 147.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-11-17 12:52:32 -0800
+Processing by PuzzlesController#index as HTML
+  Rendering puzzles/index.html.erb within layouts/application
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT "puzzles".* FROM "puzzles"[0m
+  Rendered puzzles/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-11-17 12:56:49 -0800
+Processing by PuzzlesController#index as HTML
+  Rendering puzzles/index.html.erb within layouts/application
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT "puzzles".* FROM "puzzles"[0m
+  Rendered puzzles/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-11-17 13:02:13 -0800
+Processing by PuzzlesController#index as HTML
+  Rendering puzzles/index.html.erb within layouts/application
+  [1m[36mPuzzle Load (0.3ms)[0m  [1m[34mSELECT "puzzles".* FROM "puzzles"[0m
+  Rendered puzzles/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-11-17 13:03:08 -0800
+Processing by PuzzlesController#index as HTML
+  Rendering puzzles/index.html.erb within layouts/application
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT "puzzles".* FROM "puzzles"[0m
+  Rendered puzzles/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-11-17 13:03:13 -0800
+Processing by PuzzlesController#index as HTML
+  Rendering puzzles/index.html.erb within layouts/application
+  [1m[36mPuzzle Load (0.3ms)[0m  [1m[34mSELECT "puzzles".* FROM "puzzles"[0m
+  Rendered puzzles/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 24ms (Views: 23.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/characters.json" for 127.0.0.1 at 2019-11-17 13:03:30 -0800
+Processing by CharactersController#index as JSON
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+Completed 200 OK in 14ms (Views: 6.7ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-11-17 13:03:36 -0800
+Processing by PuzzlesController#index as HTML
+  Rendering puzzles/index.html.erb within layouts/application
+  [1m[36mPuzzle Load (0.4ms)[0m  [1m[34mSELECT "puzzles".* FROM "puzzles"[0m
+  Rendered puzzles/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 22ms (Views: 19.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/characters.json" for 127.0.0.1 at 2019-11-17 13:06:59 -0800
+Processing by CharactersController#index as JSON
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-11-17 13:07:00 -0800
+Processing by PuzzlesController#index as HTML
+  Rendering puzzles/index.html.erb within layouts/application
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT "puzzles".* FROM "puzzles"[0m
+  Rendered puzzles/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-11-17 13:07:09 -0800
+Processing by PuzzlesController#index as HTML
+  Rendering puzzles/index.html.erb within layouts/application
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT "puzzles".* FROM "puzzles"[0m
+  Rendered puzzles/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-11-17 13:07:47 -0800
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PuzzlesController#index as HTML
+  Rendering puzzles/index.html.erb within layouts/application
+  [1m[36mPuzzle Load (0.4ms)[0m  [1m[34mSELECT "puzzles".* FROM "puzzles"[0m
+  Rendered puzzles/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 256ms (Views: 244.3ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-11-17 13:08:11 -0800
+Processing by PuzzlesController#index as HTML
+  Rendering puzzles/index.html.erb within layouts/application
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT "puzzles".* FROM "puzzles"[0m
+  Rendered puzzles/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 38ms (Views: 36.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-11-17 13:08:40 -0800
+Processing by PuzzlesController#index as HTML
+  Rendering puzzles/index.html.erb within layouts/application
+  [1m[36mPuzzle Load (0.2ms)[0m  [1m[34mSELECT "puzzles".* FROM "puzzles"[0m
+  Rendered puzzles/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-11-17 13:41:45 -0800
+  [1m[35m (10.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PuzzlesController#index as HTML
+  Rendering puzzles/index.html.erb within layouts/application
+  [1m[36mPuzzle Load (48.4ms)[0m  [1m[34mSELECT "puzzles".* FROM "puzzles"[0m
+  Rendered puzzles/index.html.erb within layouts/application (103.4ms)
+Completed 200 OK in 1178ms (Views: 1075.6ms | ActiveRecord: 71.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-11-17 13:43:09 -0800
+Processing by PuzzlesController#index as HTML
+  Rendering puzzles/index.html.erb within layouts/application
+  [1m[36mPuzzle Load (0.6ms)[0m  [1m[34mSELECT "puzzles".* FROM "puzzles"[0m
+  Rendered puzzles/index.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 34ms (Views: 26.2ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/characters.json" for 127.0.0.1 at 2019-11-17 13:43:49 -0800
+Processing by CharactersController#index as JSON
+  [1m[36mCharacter Load (97.5ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+Completed 200 OK in 158ms (Views: 12.4ms | ActiveRecord: 105.4ms)
+
+
+Started GET "/characters.json" for 127.0.0.1 at 2019-11-17 13:43:50 -0800
+Processing by CharactersController#index as JSON
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.3ms)
+
+

@@ -1,8 +1,14 @@
 # OdinWheresWaldo
 
+> Ruby on Rails project
+
 Learn more about the project specifications [here](https://www.theodinproject.com/courses/javascript-and-jquery/lessons/where-s-waldo-a-photo-tagging-app)
 
 App is [live](https://odinwhereswaldo.herokuapp.com/)
+
+## Demo
+
+![](demo.gif)
 
 ## Instructions
 

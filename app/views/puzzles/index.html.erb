@@ -2,6 +2,8 @@
 
 <section class="puzzles">
   <ul class="puzzles__items">
+    <% # to display the puzzles in the proper order based on difficulty %>
+    <% @puzzles = [@puzzles[0], @puzzles[2], @puzzles[1]] %>
     <% @puzzles.each do |puzzle| %>
       <li>
         <article class="puzzle__item">
